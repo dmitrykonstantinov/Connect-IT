@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Text
+    <string name="app_name">Connect IT</string>
+    <string name="title_main">Connect IT</string>
+    <string name="btnNetGameText">Игра по сети</string>
+    <string name="btnSplitScreenText">Игра на одном экране</string>
+    <string name="btnTutorialGameModeText">Игра с AI</string>
+    <string name="btnTutorial">Обучение</string>
+    <string name="btnCampaign">Компания</string>
+    <string name="top_content_text_cross">Крестики</string>
+    <string name="top_content_noughts">Нолики</string>
+    <string name="zero_score">0</string>
+    <string name="play">Играть</string>
+    <string name="net_game_button_text">Сдаться</string>
+    <string name="split_screen_button_text">Выйти</string>
+    <string name="tutorial_game_button_text">Выйти</string>
+    <string name="no_internet_connection_play_games">Первый и единственный раз после установки для коректной работы сервисов Google Play
+                требуется интернет соединение. Пожалуйста, подключите интернет и повторите попытку.</string>
+    <string name="no_internet_title">Проблема соединения с интернетом</string>
+    <string name="rating_title">Рейтинг</string>
+    <string name="chooseGameType">Выберите тип игры</string>
+    <string name="classical_mp_game_mode">Классический</string>
+    <string name="blitz_mp_game_mode">Блитц</string>
+    <string name="normal_mp_game_mode">Обычный</string>
+    <string name="loading_stuff">Загрузка</string>
+    <string name="mp_loading_text">Идет подбор соперника для вас. Обождите пожалуйста, будьте так любезны</string>
+    <string name="rating_table_hint_text">Сыграйте хотя бы одну рейтинговую игру, чтобы увидеть себя в
+                рейтинговой таблице</string>
+    <string name="win_title">Ура!</string>
+    <string name="can_loose_title">Внимание</string>
+    <string name="can_loose_text">Если вы проиграете эту игру, вам придется начать уровень сначала. Но вы можете сохранить прогресс посмотрев рекламу</string>
+    <string name="loose_title">О нет!</string>
+    <string name="tie_title">Ничья</string>
+    <string name="mp_win_text">Поздравляю, вы победили! :)</string>
+    <string name="continue_text">Я крутой!</string>
+    <string name="watch_ad">Посмотреть рекламу и сохранить прогресс</string>
+    <string name="no">Нет</string>
+    <string name="error_title_txt">ОШИБКА:</string>
+    <string name="error_message_txt">Сообщение</string>
+    <string name="error_caused_by_txt">Причина</string>
+    <string name="ok">OK</string>
+    <string name="loose_progress">Потерять прогресс</string>
+    <string name="surrender_title_text">Уверены?</string>
+    <string name="surrender_content_text">Всегда есть шанс, что у соперника отвалится интернет :)</string>
+    <string name="surrender_btn_text">Сдаться</string>
+    <string name="circles_text">Нолики</string>
+    <string name="crosses_text">Крестики</string>
+    <string name="tutorial_player_text">Вы</string>
+    <string name="tutorial_enemy_text">Соперник</string>
+    <string name="offline_mode_title">Сетевой режим недоступен :(</string>
+    <string name="offline_servers_under_construction">На данный момент сервера времено недоступны в связи с техническим обслуживаением. Пожалуйста, возвращайтесь через пару часов.</string>
+    <string name="offline_old_api_version">Приложение устарело, пожалуйста, обновите приложение, чтобы иметь возможность играть по сети.</string>
+    <string name="bad_network">Нет подключения к серверам. Пожалуйста, проверьте свое интернет-соединение</string>
+    <string name="your_rating">Твой рейтинг: </string>
+    <string name="delta_rating">Изменение по результатам игры: </string>
+    <string name="next_lvl">Следующий уровень</string>
+    <string name="win_text">Поздравляю! Вы доказали превосходство человека над искусственным интеллектом!</string>
+    <string name="loose_text">Вы проиграли! Теперь вам придется начать схватку сначала! Но этого можно избежать, посмотрев рекламу.</string>
+    <string name="take_reward">Забрать награду</string>
+    <string name="watch_ad_loose">Вы проиграли! Теперь вам придется начать схватку сначала! Но этого можно избежать, посмотрев рекламу.</string>
+    <string name="start_battle_from_scratch">Начать схватку с начала</string>
+    <string name="play_again">Сыграть еще раз</string>
+    <string name="tie_ai_text">Ничья - это когда проиграли оба</string>
+    <string name="sign_in_failed">Непредвиденная ошибка во время регистрации</string>
+    <string name="attentionText">Внимание!</string>
+    <string name="surrenderText">Вы уверены что выйти и сдаться?</string>
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_content">Please register to be able save your progress across all devices</string>
+
+    <string name="privacy_policy_title">Политика конфиденциальности</string>
+
+    //===============Tutorial Content Text=====================//
+    <string name="initStep">Эта игра немного похожа на игру три в ряд, за небольшими исключениями, которые делают эту игру гораздо интереснее!</string>
+    <string name="putFigureStep">Соберите три свои фигуры в ряд, чтобы набрать 1 очко</string>
+    <string name="putFigureWithEnemy">Поставьте свою фигуру возле фигуры соперника, чтобы набрать 4+ очков</string>
+    <string name="putFigureLongLine">Линии, которые вы зачеркиваете, могут быть любой длины. Да, даже
+                настолько большие!</string>
+    <string name="lookAtTheScore">Посмотрите на количество очков! Вы набрали их так много, потому что зачеркнули длинную линию вместе с фигурой соперника</string>
+    <string name="putFigureDiagonal">Также вы можете зачеркивать фигуры в любую сторону. Например, по диагонали</string>
+    <string name="youCanUseAbility">Вы можете использовать способность. Ого, у вас уже есть одна. Посмотрите вниз экрана, там находится панель способностей</string>
+    <string name="tryToBlock">Это непробиваемая фигура. Это специальная фигура которую не может зачеркнуть соперник. Используйте ее прямо сейчас чтобы не дать противнику набрать очки</string>
+    //===============Tutorial Steps Names=====================//
+    <string name="initStepName">Обучение</string>
+    <string name="putFigureStepName">Просто поставьте фигуру</string>
+    <string name="putFigureWithEnemyName">О, появился соперник</string>
+    <string name="putFigureLongLineName">Максимизируйте количество очков</string>
+    <string name="putFigureDiagonalName">Зачеркивайте в любую сторону</string>
+    <string name="useAbilityName">Используйте способности</string>
+
+    <string name="privacy_policy">
+        Эта страница используется для информирования посетителей о нашей политике в отношении сбора, использования и раскрытия личной информации, если кто-либо решил воспользоваться нашим сервисом.
+Если вы решите воспользоваться нашим сервисом, то вы соглашаетесь на сбор и использование информации в соответствии с настоящей Политикой. Личная информация, которую мы собираем, используется для предоставления и улучшения сервиса. Мы не будем использовать или передавать вашу информацию кому-либо, за исключением случаев, описанных в настоящей Политике конфиденциальности.
+\n Сбор и использование информации
+Для лучшего опыта использования нашего сервиса мы можем потребовать от вас предоставить нам определенную личную информацию. Запрашиваемая нами информация будет сохранена и использована в соответствии с настоящей Политикой конфиденциальности.
+Приложение действительно использует сторонние сервисы, которые могут собирать информацию, используемую для идентификации вас.
+\n Список сторонних поставщиков услуг, используемых приложением
+\n Google Play Services
+\n Appoedeal
+\n Cбор данных
+Мы хотим сообщить вам, что всякий раз, когда вы используете наш сервис, в случае ошибки в приложении мы собираем данные и информацию (через сторонние продукты) на вашем телефоне под названием Log Data. Эти данные журнала могут включать в себя такую информацию, как адрес вашего устройства Internet Protocol (“IP”), имя устройства, версию операционной системы, конфигурацию приложения при использовании нашего сервиса, время и дату вашего использования сервиса и другие статистические данные.
+\n Поставщики услуг
+\n Мы можем нанимать сторонние компании и частных лиц по следующим причинам:
+чтобы облегчить наш сервис;
+\n Для предоставления услуг от нашего имени;
+\n Для выполнения услуг, связанных с обслуживанием или
+чтобы помочь нам в анализе того, как используется наш сервис.
+Мы хотим сообщить пользователям этого сервиса, что эти третьи лица имеют доступ к вашей личной информации. Причина в том, чтобы выполнять поставленные перед ними задачи от нашего имени. Однако они обязаны не разглашать и не использовать эту информацию для каких-либо других целей.
+\n Безопасность
+Мы ценим ваше доверие при предоставлении нам Вашей личной информации, поэтому мы стремимся использовать коммерчески приемлемые средства ее защиты. Но помните, что ни один метод передачи данных через интернет, ни один метод электронного хранения не является на 100% безопасным и надежным, и мы не можем гарантировать его абсолютную безопасность.
+\n Ссылки на другие сайты
+Этот сервис может содержать ссылки на другие сайты. Если вы нажмете на стороннюю ссылку, вы будете перенаправлены на этот сайт. Обратите внимание, что эти внешние сайты не управляются нами. Поэтому мы настоятельно рекомендуем вам ознакомиться с политикой конфиденциальности этих веб-сайтов. Мы не контролируем и не несем никакой ответственности за содержание, политику конфиденциальности или практику любых сторонних сайтов или сервисов.
+\n Изменения в настоящей Политике конфиденциальности
+\n Мы можем время от времени обновлять нашу политику конфиденциальности. Таким образом, мы рекомендуем вам периодически просматривать эту страницу на предмет любых изменений. Мы уведомим вас о любых изменениях, разместив новую Политику конфиденциальности на этой странице. Эти изменения вступают в силу сразу же после их размещения на этой странице.
+\n Обратная связь
+\n Если у вас есть какие-либо вопросы или предложения по поводу нашей политики конфиденциальности, не стесняйтесь обращаться к нам по адресу breakingumbrellateam@gmail.com
+    </string>
+
+    <string name="register">Регистрация</string>
+    <string name="login">Войти</string>
+    <string name="register_later">Зарегистрироваться позже</string>
+    <string name="emailIsUsed">Этот почтовый ящик уже используется</string>
+    <string name="policy_menu_item">Политика конфиденциальности</string>
+    <string name="profile_menu_item">Профиль</string>
+    <string name="test_menu_item">Тестовое меню</string>
+    <string name="my_abilities">Мои способности</string>
+
+
+    <string name="durabaleAbilityDesc">Это специальная фигура которую не может зачеркнуть соперник.</string>
+    <string name="invisibleAbilityDesc">Это специальная фигура которая не видима для соперника, но видима для вас</string>
+    <string name="destroyAbilityDesc">Эта способоность позволяет вам уничтожить любую фигуру на поле</string>
+    <string name="secondChanceAbilityDesc">Эта способность дает вам второй ход</string>
+    <string name="openSoon">Это способность скоро откроется</string>
+    <string name="gotIt">Понятно</string>
+    <string name="new_ability_unlocked">Разблокированна новая способность</string>
+    <string name="lvl">Уровень</string>
+    <string name="i_got_it">Понятно</string>
+    <string name="yes">Да</string>
+
+    <string name="choose_abilities_title">Выберите способность</string>
+    <string name="lvl_reward">Вы получите награду после прохождения уровня</string>
+
+    <string name="durable_figure_desc">Блокирующая фигура</string>
+    <string name="invisible_figure_desc">Невидимая фигура</string>
+    <string name="destroy_figure_desc">Уничтожающая фигура</string>
+    <string name="second_chance_figure_desc">Второй ход</string>
+
+    <string name="how_was_experience">Насколько вам понравилась игра?</string>
+    <string name="not_now">Не сейчас</string>
+    <string name="never">Никогда</string>
+    <string name="submit_feedback">Отправить отзыв</string>
+    <string name="tell_us_smth">Расскажите нам что нужно улучшить</string>
+    <string name="submit">Отправить</string>
+    <string name="cancel">Отменить</string>
+</resources>

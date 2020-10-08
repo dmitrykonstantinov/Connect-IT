@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@android:color/transparent"
+                                             android:orientation="vertical">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/game_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:cpb_background_progressbar_color="@android:color/transparent"
+        app:cpb_background_progressbar_width="3dp"
+        app:cpb_progressbar_color="#91d3ff"
+        app:cpb_progressbar_width="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/game_timer_content"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/game_timer"
+        app:layout_constraintLeft_toLeftOf="@+id/game_timer"
+        app:layout_constraintRight_toRightOf="@+id/game_timer"
+        app:layout_constraintTop_toTopOf="@+id/game_timer"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

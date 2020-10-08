@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+
+def keystorePropertiesFile = file("keystore.properties")
+def keystoreProperties = new Properties()
+if(keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+    signingConfigs {
+        dev_config_sign {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+        debug {}
+    }
+
+    compileOptions.incremental = false
+
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+    def versionPropsFile = file('version.properties')
+    if (versionPropsFile.canRead()) {
+        defaultConfig {
+            applicationId "breakingumbrella.connectit"
+            renderscriptTargetApi 22
+            renderscriptSupportModeEnabled true
+            minSdkVersion 21
+            targetSdkVersion 29
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            multiDexEnabled true
+        }
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+
+//    testBuildType "debugForDevice"
+
+    buildTypes {
+        releaseForDevice {
+            minifyEnabled false
+            buildConfigField("String", "BuildType", "\"releaseForDevice\"")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.dev_config_sign
+        }
+        debugForDevice {
+            initWith debug
+            buildConfigField("String", "BuildType", "\"debugForDevice\"")
+            versionNameSuffix "-dev"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            matchingFallbacks = ['debug']
+            signingConfig signingConfigs.dev_config_sign
+        }
+        debugForEmulator {
+            initWith debug
+            buildConfigField("String", "BuildType", "\"debugForEmulator\"")
+            versionNameSuffix "-dev"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            matchingFallbacks = ['debug']
+            signingConfig signingConfigs.debug
+        }
+    }
+    android.variantFilter { variant ->
+        if (variant.buildType.name.equals('release') || variant.buildType.name.equals('debug')) {
+            variant.setIgnore(true)
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    dexOptions {
+        maxProcessCount 2
+        javaMaxHeapSize "2g"
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+    flatDir {
+        dirs 'libs-aar'
+    }
+    maven { url "https://artifactory.appodeal.com/appodeal" }
+}
+
+configurations {
+    all {
+        resolutionStrategy {
+            // do not upgrade above 3.12.0 to support API < 21 while server uses
+            // COMPATIBLE_TLS, or okhttp3 is used in project
+            force 'com.google.code.gson:gson:2.8.4'
+        }
+    }
+}
+
+dependencies {
+
+    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'junit:junit:4.12'
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.mikhaellopez:circularprogressbar:1.1.1'
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+    implementation 'androidx.media:media:1.1.0'
+//    implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-games:19.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    implementation 'tech.schoolhelper:moxy-x:1.7.0'
+    implementation 'tech.schoolhelper:moxy-x-androidx:1.7.0'
+    annotationProcessor 'tech.schoolhelper:moxy-x-compiler:1.7.0'
+    implementation 'com.google.dagger:dagger:2.27'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
+    implementation 'com.squareup:javapoet:1.11.1'
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.github.razir.progressbutton:progressbutton:2.0.1'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.firebase:firebase-firestore:21.5.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+
+    //Can be problematic
+    implementation 'com.squareup.retrofit2:converter-jackson:2.4.0'
+
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.8.4'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.8.4'
+
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24'
+
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+
+    implementation 'com.google.android.material:material:1.2.0'
+
+//    implementation 'me.relex:circleindicator:2.1.4'
+
+    implementation 'com.appodeal.ads:sdk:2.6.5.0'
+
+    implementation 'com.explorestack:consent:1.0.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+}

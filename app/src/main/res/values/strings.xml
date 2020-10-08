@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Text
+    <string name="app_name">Connect IT</string>
+    <string name="title_main">Connect IT</string>
+    <string name="btnNetGameText">Net Game</string>
+    <string name="btnSplitScreenText">Split Screen Game</string>
+    <string name="btnTutorialGameModeText">AI Game</string>
+    <string name="btnTutorial">Tutorial</string>
+    <string name="btnCampaign">Campaign</string>
+    <string name="top_content_text_cross">Xs</string>
+    <string name="top_content_noughts">Os</string>
+    <string name="zero_score">0</string>
+    <string name="play">Play</string>
+    <string name="net_game_button_text">Surrender</string>
+    <string name="split_screen_button_text">Exit</string>
+    <string name="tutorial_game_button_text">Exit</string>
+    <string name="no_internet_connection_play_games">After the installation for the correct operation of Google Play services
+                Internet connection is required. Please, connect online and try again</string>
+    <string name="no_internet_title">Internet connection issue</string>
+    <string name="rating_title">Rating</string>
+    <string name="chooseGameType">Choose game type</string>
+    <string name="classical_mp_game_mode">Classical</string>
+    <string name="blitz_mp_game_mode">Blitz</string>
+    <string name="normal_mp_game_mode">Normal</string>
+    <string name="loading_stuff">Loading Stuff</string>
+    <string name="mp_loading_text">Looking for opponent for you. Please stand by</string>
+    <string name="rating_table_hint_text">Play at least one rating game to see yourself in a rating table</string>
+    <string name="win_title">YEAH!</string>
+    <string name="can_loose_title">Ooops</string>
+    <string name="can_loose_text">If you loose that game you had to start trip again from scratch. But you can avoid it by watching Ad</string>
+    <string name="loose_title">O NO!</string>
+    <string name="tie_title">Tie</string>
+    <string name="mp_win_text">Congratulations! You are win :)</string>
+    <string name="continue_text">I am cool</string>
+    <string name="watch_ad">Watch ad and save progress</string>
+    <string name="no">No</string>
+    <string name="surrenderText">Are you sure you want leave and loose?</string>
+    <string name="attentionText">WOW!</string>
+    <string name="error_title_txt">ERROR:</string>
+    <string name="error_message_txt">Message</string>
+    <string name="error_caused_by_txt">Cause by</string>
+    <string name="ok">OK</string>
+    <string name="surrender_title_text">Are you sure?</string>
+    <string name="surrender_content_text">There is always a chance that opponent will disconnect :)</string>
+    <string name="surrender_btn_text">Surrender</string>
+    <string name="circles_text">Os</string>
+    <string name="crosses_text">Xs</string>
+    <string name="tutorial_player_text">You</string>
+    <string name="tutorial_enemy_text">Enemy</string>
+    <string name="offline_mode_title">Only offline mode available :(</string>
+    <string name="offline_servers_under_construction">At the moment the server is temporarily unavailable due to maintenance. Please come back in a couple of hours.</string>
+    <string name="offline_old_api_version">The application is out of date, please update the application to be able to play via the network.</string>
+    <string name="bad_network">Can not connect to server because of unknown reason. Please check your internet connection</string>
+    <string name="your_rating">Your rating: </string>
+    <string name="delta_rating">Delta rating: </string>
+    <string name="win_text">Congratulations, you are winner!</string>
+    <string name="next_lvl">Next level</string>
+    <string name="take_reward">Take reward</string>
+    <string name="watch_ad_loose">Watch AD</string>
+    <string name="loose_text">You are loose. To save progress, watch AD</string>
+    <string name="play_again">Play again</string>
+    <string name="start_battle_from_scratch">Play again</string>
+    <string name="loose_progress">Loose progress</string>
+    <string name="tie_ai_text">A tie is when both loose</string>
+    <string name="sign_in_failed">Unexpected error during sign in</string>
+    <string name="registration_title">Registration</string>
+    <string name="registration_content">Please register to be able save your progress across all devices</string>
+
+    <string name="privacy_policy_title">Privacy Policy</string>
+
+    //===============Tutorial Content Text=====================//
+    <string name="initStep">This game is easy to start, hard to master type of games. Let\'s learn just three basic rules</string>
+    <string name="putFigureStep">Collect three your\'s figures to get 1 score</string>
+    <string name="putFigureWithEnemy">Put a figure near your enemy\'s figure to gain 4+ score</string>
+    <string name="lookAtTheScore">Look at the score! You have so much score because you have shrunk a long line with an enemy figure</string>
+    <string name="putFigureLongLine">The lines that you can shrink may be of any length, even that large</string>
+    <string name="putFigureDiagonal">You can shrink in any direction. Let\'s try diagonal for example</string>
+    <string name="youCanUseAbility">You can use abilities. Wow, you got one. Look at the bottom of screen where abilities is located</string>
+    <string name="tryToBlock">It is Durable ability. It is special figure that can\'t be crossed by enemy. Use it now to make your opponent earning any points a harder task!</string>
+    //===============Tutorial Steps Names=====================//
+    <string name="initStepName">Tutorial</string>
+    <string name="putFigureStepName">Just put a figure</string>
+    <string name="putFigureWithEnemyName">O, here is the enemy</string>
+    <string name="putFigureLongLineName">Maximize your score</string>
+    <string name="putFigureDiagonalName">Choose any direction</string>
+    <string name="useAbilityName">Use ability</string>
+
+
+    <string name="privacy_policy">Breaking Umbrella built the Connect IT app as an Ad Supported app. This SERVICE is provided by Breaking Umbrella at no cost and is intended for use as is.
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that We collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+
+                \n Information Collection and Use
+\nFor a better experience, while using our Service, We may require you to provide us with certain personally identifiable information. The information that We request will be retained by us and used as described in this privacy policy.
+The app does use third party services that may collect information used to identify you.
+\nList third party service providers used by the app
+\nGoogle Play Services
+\nAppodeal
+\nLog Data
+\nWe want to inform you that whenever you use our Service, in a case of an error in the app We collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilising our Service, the time and date of your use of the Service, and other statistics.
+\nService Providers
+\nWe may employ third-party companies and individuals due to the following reasons:
+\nTo facilitate our Service;
+\nTo provide the Service on our behalf;
+\nTo perform Service-related services; or
+\nTo assist us in analyzing how our Service is used.
+\nWe want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+\nSecurity
+\nWe value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and We cannot guarantee its absolute security.
+\nLinks to Other Sites
+\nThis Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, We strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+\nChildren’s Privacy
+\nThese Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case We discover that a child under 13 has provided us with personal information, We immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that We will be able to do necessary actions.
+\nChanges to This Privacy Policy
+\nWe may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+\nContact Us
+\nIf you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at breakingumbrellateam@gmail.com</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="register_later">Register later</string>
+    <string name="emailIsUsed">"The email address is already in use by another account"</string>
+    <string name="policy_menu_item">Policy</string>
+    <string name="profile_menu_item">Profile</string>
+    <string name="test_menu_item">Test Menu</string>
+    <string name="my_abilities">My abilities</string>
+
+    <string name="durabaleAbilityDesc">It is special figure that can\'t be crossed by enemy.</string>
+    <string name="invisibleAbilityDesc">It is special figure that invisible for enemy but visible for you</string>
+    <string name="destroyAbilityDesc">This ability allow you to destroy any figure on the field</string>
+    <string name="secondChanceAbilityDesc">This ability brings you second turn.</string>
+    <string name="openSoon">This ability will be opened soon</string>
+    <string name="gotIt">Got it</string>
+    <string name="new_ability_unlocked">New ability unlocked</string>
+    <string name="lvl">Level</string>
+    <string name="i_got_it">I got it</string>
+    <string name="yes">Yes</string>
+
+    <string name="choose_abilities_title">Choose abilities</string>
+    <string name="lvl_reward">You get a reward when you ll finished level</string>
+    <string name="durable_figure_desc">Durable figure</string>
+    <string name="invisible_figure_desc">Invisible figure</string>
+    <string name="destroy_figure_desc">Destroy figure</string>
+    <string name="second_chance_figure_desc">Second chance</string>
+
+    <string name="how_was_experience">How was your experience with us?</string>
+    <string name="not_now">Not Now</string>
+    <string name="never">Never</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="tell_us_smth">Tell us where we can improve</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+</resources>

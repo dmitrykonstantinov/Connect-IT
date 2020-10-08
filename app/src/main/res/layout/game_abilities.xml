@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgAbility1"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_circle" />
+
+    <ImageView
+        android:id="@+id/imgAbility2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imgAbility1"
+        app:layout_constraintTop_toTopOf="@+id/imgAbility1"
+        app:srcCompat="@drawable/default_circle" />
+
+    <ImageView
+        android:id="@+id/imgAbility3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imgAbility2"
+        app:layout_constraintTop_toTopOf="@+id/imgAbility2"
+        app:srcCompat="@drawable/default_circle" />
+
+    <ImageView
+        android:id="@+id/imgAbility4"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imgAbility3"
+        app:layout_constraintTop_toTopOf="@+id/imgAbility3"
+        app:srcCompat="@drawable/default_circle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

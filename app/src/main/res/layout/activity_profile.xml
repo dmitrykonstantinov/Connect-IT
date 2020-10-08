@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="breakingumbrella.connectit.presentation.testmenu.TestMenuActivity">
+
+    <TextView
+        android:id="@+id/test_lvl_numb_txt"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Level:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_trip_numb_txt" />
+
+    <TextView
+        android:id="@+id/test_trip_numb_txt"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Trip:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/is_verified_txt" />
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/mainGrey"
+        android:text="Logout"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        style="@style/TitleTextStyle"
+        android:id="@+id/nickname_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Nickname: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_icon" />
+
+    <TextView
+        android:id="@+id/is_verified_txt"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Is veriffied: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_txt" />
+
+    <EditText
+        android:id="@+id/trip_et"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/test_trip_numb_txt"
+        app:layout_constraintStart_toEndOf="@+id/test_trip_numb_txt"
+        app:layout_constraintTop_toTopOf="@+id/test_trip_numb_txt" />
+
+    <EditText
+        android:id="@+id/lvl_et"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/test_lvl_numb_txt"
+        app:layout_constraintStart_toStartOf="@+id/trip_et"
+        app:layout_constraintTop_toTopOf="@+id/test_lvl_numb_txt" />
+
+    <Button
+        style="@style/ButtonMainTextStyle"
+        android:background="@color/mainGrey"
+        android:id="@+id/apply_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Apply"
+        app:layout_constraintStart_toEndOf="@+id/trip_et"
+        app:layout_constraintTop_toTopOf="@+id/trip_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="breakingumbrella.connectit.presentation.registration.RegistrationActivity">
+
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/mainGrey"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/login"
+        app:layout_constraintStart_toEndOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="E-MAIL"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/registrationTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationTitle" />
+
+    <TextView
+        android:id="@+id/registrationTitle"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/registrationContent"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/registration_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/mainGrey"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintStart_toEndOf="@+id/password" />
+
+    <Button
+        android:id="@+id/register_later"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/mainGrey"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/register_later"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/registrationContent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/registrationContent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationContent" />
+
+    <ImageButton
+        android:id="@+id/regByPhoneBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/mainGrey"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/register_later"
+        app:layout_constraintTop_toBottomOf="@+id/register_later"
+        app:srcCompat="@drawable/fui_ic_phone_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/regByGoogleBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/mainGrey"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/register_later"
+        app:layout_constraintTop_toBottomOf="@+id/register_later"
+        app:srcCompat="@drawable/fui_ic_googleg_color_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="crossLine">#12747b</color>-->
+<!--    <color name="ratingUpperColor">#0e122b</color>-->
+<!--    <color name="ratingUpperShadow">#80000000</color>-->
+<!--    <color name="ratingTitleColor">#8cc5ff</color>-->
+<!--    <color name="ratingFirstUp">#d2a24f</color>-->
+<!--    <color name="ratingFirstDown">#ffea52</color>-->
+<!--    <color name="ratingSecondUp">#dcdcdc</color>-->
+<!--    <color name="ratingSecondDown">#7392bc</color>-->
+<!--    <color name="ratingThirdUp">#9b8050</color>-->
+<!--    <color name="ratingThirdDown">#93376a</color>-->
+<!--    <color name="backgroundMainColor">#0a0d22</color>-->
+<!--    <color name="textFontMainColor">#5dabff</color>-->
+<!--    <color name="buttonMainColor">#0a0d22</color>-->
+<!--    <color name="krestPressed">#4897cff5</color>-->
+<!--    <color name="krest">#97cff5</color>-->
+<!--    <color name="noll">#a798ff</color>-->
+<!--    <color name="nollPressed">#48a798ff</color>-->
+<!--    <color name="gridColor">#8b78ff</color>-->
+<!--    <color name="color_preloader_start">#e8f3fb</color>-->
+<!--    <color name="color_preloader_center">#12747b</color>-->
+<!--    <color name="color_preloader_end">#0a0d22</color>-->
+<!--    <color name="icons_color">#9cd1ff</color>-->
+
+<!--    &lt;!&ndash;    Dialog colors&ndash;&gt;-->
+
+<!--    <color name="colorPrimaryDark">#4D000000</color>-->
+<!--    <color name="colorAccent">#FFC41A</color>-->
+<!--    <color name="contentTextColor">#55000000</color>-->
+<!--    <color name="starColor">#45b9ad</color>-->
+<!--    <color name="noteDescriptionTextColor">#45b9ad</color>-->
+<!--    <color name="titleTextColor">#FFFFFF</color>-->
+<!--    <color name="descriptionTextColor">#A6FFFFFF</color>-->
+<!--    <color name="commentTextColor">#FFFFFF</color>-->
+<!--    <color name="hintTextColor">#55000000</color>-->
+
+    <!--   New colors -->
+
+    <color name="mainBackground">#FFFFFF</color>
+    <color name="mainBlack">#484848</color>
+    <color name="mainYellow">#FFC123</color>
+    <color name="mainBlue">#A5D9F1</color>
+
+    <color name="colorPrimary">#D8D8D8</color>
+    <color name="mainGrey">#D8D8D8</color>
+
+    <color name="mainOrange">#FF7223</color>
+    <color name="mainWhiteHalfTransparent">#7FFFFFFF</color>
+
+</resources>

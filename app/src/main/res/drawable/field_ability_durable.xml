@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/circle"
+        android:drawable="@drawable/default_circle" />
+    <item
+        android:id="@+id/ability"
+        android:bottom="6dp"
+        android:drawable="@drawable/ic_durable"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="4dp" />
+</layer-list>

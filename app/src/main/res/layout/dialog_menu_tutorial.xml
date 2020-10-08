@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/lvlCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbContent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbContent"
+        tools:context="breakingumbrella.connectit.presentation.testmenu.TestMenuActivity">
+
+        <ImageView
+            android:id="@+id/lvlDescImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:tint="@color/mainYellow"
+            app:srcCompat="@drawable/ic_lvl_item_circle" />
+
+        <TextView
+            android:id="@+id/lvlDescTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="7dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lvlCont3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbContent3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbContent3"
+        tools:context="breakingumbrella.connectit.presentation.testmenu.TestMenuActivity">
+
+        <ImageView
+            android:id="@+id/lvlDescImg3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:tint="@color/mainWhiteHalfTransparent"
+            app:srcCompat="@drawable/ic_lvl_item_circle" />
+
+        <TextView
+            android:id="@+id/lvlDescTxt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="7dp"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lvlCont2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lbContent2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbContent2"
+        tools:context="breakingumbrella.connectit.presentation.testmenu.TestMenuActivity">
+
+        <ImageView
+            android:id="@+id/lvlDescImg2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:tint="@color/mainOrange"
+            app:srcCompat="@drawable/ic_lvl_item_circle" />
+
+        <TextView
+            android:id="@+id/lvlDescTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="7dp"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/lbContent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/play_regular"
+        android:gravity="center"
+        android:text="Это - уровень который еще не пройден"
+        android:textColor="@color/mainBlack"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lvlCont3"
+        app:layout_constraintTop_toBottomOf="@+id/lbContent2" />
+
+    <TextView
+        android:id="@+id/lbContent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/play_regular"
+        android:gravity="center"
+        android:text="А так - текущий"
+        android:textColor="@color/mainBlack"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lvlCont2"
+        app:layout_constraintTop_toBottomOf="@+id/lbContent" />
+
+    <TextView
+        android:id="@+id/lbTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Обучение"
+        android:textColor="@color/mainBlack"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/play_regular"
+        android:gravity="center"
+        android:text="Так обозначается пройденый уровень"
+        android:textColor="@color/mainBlack"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lvlCont"
+        app:layout_constraintTop_toBottomOf="@+id/lbTitle" />
+
+    <Button
+        android:id="@+id/ok_button"
+        style="@style/menuTextStyle"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_button_background_orange"
+        android:fontFamily="@font/play_bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/i_got_it"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbContent3"
+        app:layout_constraintVertical_bias="0.49" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

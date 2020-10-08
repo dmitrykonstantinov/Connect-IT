@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/activity_main"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="breakingumbrella.connectit.presentation.testmenu.TestMenuActivity">
+
+    <Button
+        android:id="@+id/btnSplitScreenGame"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="@string/btnSplitScreenText"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/btnNetGame"
+        app:layout_constraintRight_toRightOf="@+id/btnNetGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="@string/btnTutorialGameModeText"
+        android:background="@color/colorPrimary"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTutorialGameMode"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btnSplitScreenGame"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnSplitScreenGame"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSplitScreenGame"/>
+
+    <Button
+        android:visibility="visible"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="@string/btnTutorial"
+        android:background="@color/white"
+        style="@style/ButtonMainTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTutorial"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btnTutorialGameMode"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnTutorialGameMode"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTutorialGameMode"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

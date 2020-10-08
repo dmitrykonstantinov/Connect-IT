@@ -1,0 +1,90 @@
+<resources>
+    <!-- Base application theme. -->
+
+
+
+    <style name="ButtonMainTextStyle" parent="android:TextAppearance">
+        <item name="font">@font/myriadpro_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/mainBlack</item>
+    </style>
+
+    <style name="Game_top_content_label_text" parent="android:TextAppearance">
+        <item name="font">@font/myriadpro_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/mainBlack</item>
+    </style>
+
+    <style name="Game_top_content_player_text" parent="android:TextAppearance">
+        <item name="font">@font/myriadpro_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/mainBlack</item>
+    </style>
+
+    <style name="Game_top_content_score_text" parent="android:TextAppearance">
+        <item name="font">@font/myriadpro_regular</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/mainBlack</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="MyDialogFadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+    <!-- New Styles  !-->
+
+    <style name="TitleTextStyle" parent="defaultText">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/play_bold</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/mainBackground</item>
+        <item name="android:windowBackground">@color/mainBackground</item>
+    </style>
+
+    <style name="scoreText" parent="defaultText">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="nickText" parent="defaultText">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="defaultText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/mainBlack</item>
+        <item name="fontFamily">@font/play_regular</item>
+    </style>
+
+    <style name="menuTextStyle" parent="defaultText">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="defaultTextSmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/mainBlack</item>
+        <item name="fontFamily">@font/play_regular</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/white</item>
+        <item name="titleTextColor">@color/mainBlack</item>
+<!--        <item name="titleTextAppearance">@style/ToolbarTitleAppearanceStyle</item>-->
+<!--        <item name="subtitleTextAppearance">@style/ToolbarSubtitleAppearanceStyle</item>-->
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+<!--        <item name="navigationIcon">@drawable/ic_back_arrow</item>-->
+        <item name="theme">@style/Theme.AppCompat.Light</item>
+    </style>
+
+</resources>
